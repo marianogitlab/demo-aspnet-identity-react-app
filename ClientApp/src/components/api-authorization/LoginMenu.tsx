@@ -18,8 +18,10 @@ export const LoginMenu = () => {
         setSubscription(authService.subscribe(() => populateState()));
         populateState();
 
-        return () => authService.unsubscribe(subscription);
-    }, []);
+        return () => {
+            authService.unsubscribe(subscription);
+        }
+}, []);
 
 
     const populateState = async () => {

@@ -8,12 +8,12 @@ import * as React from 'react';
 const AppRoutes = [
     {
         index: true,
-        requireAuth: false,
+        requireAuth: true,
         element: <Home />
     },
     {
         path: '/counter',
-        requireAuth: false,
+        requireAuth: true,
         element: <Counter />
     },
     {

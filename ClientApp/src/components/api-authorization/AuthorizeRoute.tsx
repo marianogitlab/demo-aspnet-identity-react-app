@@ -17,7 +17,9 @@ const AuthorizeRoute = ({ path, element }: any)=> {
         setSubscription(authService.subscribe(() => authenticationChanged()));
         populateAuthenticationState();
 
-        return authService.unsubscribe(_subscription);
+        return () => {
+            authService.unsubscribe(_subscription);
+        }
     }, []);
 
 

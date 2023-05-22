@@ -96,7 +96,7 @@ export const Logout = ({ action }: { action: string }) => {
         }
         return (state && state.returnUrl) ||
             fromQuery ||
-            `${window.location.origin}${ApplicationPaths.LoggedOut}`;
+            `${window.location.origin}${ApplicationPaths.Login}`;
     }
 
     const navigateToReturnUrl = (returnUrl: string) => {

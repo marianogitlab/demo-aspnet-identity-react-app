@@ -36,7 +36,7 @@ export const Login = ({ action }: { action: any }) => {
                 throw new Error(`Invalid action '${action}'`);
         }
     }, []);
-    
+
     const login = async (returnUrl) => {
         const state = { returnUrl };
         const result: any = await authService.signIn(state);

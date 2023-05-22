@@ -15,7 +15,7 @@ export const NavMenu = () => {
     return (
         <header>
             <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" container light>
-                <NavbarBrand tag={Link} to="/">DemoIdentity1</NavbarBrand>
+                <NavbarBrand>DemoIdentity1</NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} className="mr-2" />
                 <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!collapsed} navbar>
                     <ul className="navbar-nav flex-grow">
@@ -24,6 +24,9 @@ export const NavMenu = () => {
                         </NavItem>
                         <NavItem>
                             <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink tag={Link} className="text-dark" to="/companies">Companies</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
